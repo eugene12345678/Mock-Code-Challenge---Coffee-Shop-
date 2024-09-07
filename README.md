@@ -59,3 +59,14 @@ coffee_shop/
 5. Install Dependencies
 
 There are no external dependencies for this project. If you add any in the future, you can use a `requirements.txt` file to list them.
+
+## Contributing
+Feel free to contribute to this project by submitting issues, pull requests, or suggestions. Please follow standard Git workflow practices.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+[Eugene Mathenge](https://github.com/dashboard)
+
+
