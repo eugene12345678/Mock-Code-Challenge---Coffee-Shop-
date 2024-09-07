@@ -22,3 +22,11 @@ The relationships between these models are as follows:
 - Python 3.x installed on your machine.
 - An IDE or text editor of your choice (such as VS Code, PyCharm, or Sublime Text).
 
+### Installation
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/eugene12345678/Mock-Code-Challenge---Coffee-Shop-.git
+cd Mock-Code-Challenge---Coffee-Shop
+```
+
