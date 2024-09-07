@@ -44,3 +44,15 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
+4. Create Project Files and Folders
+- Organize your project structure as follows:
+```css
+coffee_shop/
+├── models/
+│   ├── coffee.py
+│   ├── customer.py
+│   └── order.py
+├── venv/
+├── requirements.txt
+├── README.md
+```
