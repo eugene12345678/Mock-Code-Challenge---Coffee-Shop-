@@ -30,3 +30,17 @@ git clone https://github.com/eugene12345678/Mock-Code-Challenge---Coffee-Shop-.g
 cd Mock-Code-Challenge---Coffee-Shop
 ```
 
+2. **Create a Virtual Environment**
+```bash
+python -m venv venv
+```
+3. **Activate the Virtual Environment**
+- On Windows:
+```bash
+venv\Scripts\activate
+```
+- On macOS/Linux:
+```bash
+source venv/bin/activate
+```
+
