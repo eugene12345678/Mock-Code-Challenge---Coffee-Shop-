@@ -56,3 +56,6 @@ coffee_shop/
 ├── requirements.txt
 ├── README.md
 ```
+5. Install Dependencies
+
+There are no external dependencies for this project. If you add any in the future, you can use a `requirements.txt` file to list them.
