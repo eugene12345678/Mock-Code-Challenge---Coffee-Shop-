@@ -8,14 +8,14 @@ espresso = Coffee("Espresso")
 
 # Create customer instances
 eugene = Customer("Eugene")
-bob = Customer("Cate")
+cate = Customer("Cate")
 
 # Eugene places orders
 order1 = eugene.new_order(latte, 5.0)
 order2 = eugene.new_order(espresso, 4.5)
 
-# Bob places an order
-order3 = bob.new_order(latte, 5.5)
+# Cate places an order
+order3 = cate.new_order(latte, 5.5)
 
 # Check Eugene's orders
 print("Eugene's Orders:", eugene.orders())  # Should display detailed Order objects
@@ -32,4 +32,4 @@ print("Latte Average Price:", latte.average_price())  # Should print average pri
 
 # Get the most aficionado customer for Latte
 most_aficionado = Customer.most_aficionado(latte)
-print("Most Aficionado for Latte:", most_aficionado.name)  # Should print "Eugene" or "Bob" depending on who spent more on Latte
+print("Most Aficionado for Latte:", most_aficionado.name)  # Should print "Eugene" or "Cate" depending on who spent more on Latte
