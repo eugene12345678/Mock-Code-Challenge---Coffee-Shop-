@@ -1,31 +1,29 @@
-from customer import Customer
-from coffee import Coffee
 class Order:
     def __init__(self, customer, coffee, price):
+        from customer import Customer  # Import here to avoid circular import
+        from coffee import Coffee  # Import here to avoid circular import
         self.customer = customer
         self.coffee = coffee
         self.price = price
         
     @property
-    def cost(self):
+    def price(self):
         return self._price
     
-    @cost.setter
-    def cost(self, value):
+    @price.setter
+    def price(self, value):
         if isinstance(value, float) and 1.0 <= value <= 10.0:
             self._price = value
         else:
-            raise ValueError("Price must bea a float between 1.0 and 10.0.")
-# order1 = Order("Eugene", "Black coffee", 7.5)
-# print(order1.price)
+            raise ValueError("Price must be a float between 1.0 and 10.0.")
 
-    
     @property
     def customer(self):
         return self._customer
 
     @customer.setter
     def customer(self, value):
+        from customer import Customer  # Import here to avoid circular import
         if isinstance(value, Customer):
             self._customer = value
         else:
@@ -37,8 +35,11 @@ class Order:
 
     @coffee.setter
     def coffee(self, value):
+        from coffee import Coffee  # Import here to avoid circular import
         if isinstance(value, Coffee):
             self._coffee = value
         else:
             raise ValueError("Coffee must be an instance of Coffee.")
-        
+    
+    def __repr__(self):
+        return f"Order(customer={self.customer.name}, coffee={self.coffee.name}, price={self.price})"
