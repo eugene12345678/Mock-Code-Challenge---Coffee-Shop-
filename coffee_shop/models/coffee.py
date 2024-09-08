@@ -24,4 +24,19 @@ class Coffee:
           if order.customer not in all_customers:
             all_customers.append(order.customer)
         return all_customers
+    
+    def num_orders(self):
+        return len(self._orders)
+    
+    def average_price(self):
+        # Returns the average price for a coffee based on its orders
+        if len(self._orders) == 0:
+            return 0
+
+        total_price = 0
+        for order in self._orders:
+            total_price += order.price
+
+        return total_price / len(self._orders)
+
 
